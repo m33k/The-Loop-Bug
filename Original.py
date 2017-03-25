@@ -1,11 +1,14 @@
 print("Sa-k passe Boss?!")
-g = input("Guess the number:")
-guess = int(g)
-if guess == 5
+while True:
+ g = input("Guess the number:")
+ guess = int(g)
+ if guess < 5: 
+  print("Guess again please! ")
+  print("A shame, that's too low")
+ elif guess > 5:
+  print("Guess again please! ")
+  print("That is too darn high")
+ else:
   print("You got it!")
-else:
-  if guess > 5:
-    print("That is too darn high")
-  else:
-    print("A shame, that's too low")
-print("The game is terminated!")
+  print("The game is terminated!")
+  exit()
